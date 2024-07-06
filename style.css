@@ -1,0 +1,57 @@
+:root {
+    --background-color: #212121;
+    --foreground-color: #FFFFFF;
+    --accent-color: #FF0080;
+    --description-text-color: #808080;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: var(--foreground-color);
+    padding: 16px;
+}
+
+h1 {
+    color: var(--accent-color);
+    font-size: 2.25em;
+}
+
+p, h1, h2, h3 {
+    margin: 0px;
+    padding: 0px;
+}
+
+p.description {
+    font-size: 0.80em;
+    color: var(--description-text-color);
+}
+
+section {
+    margin-bottom: 16px;
+}
+
+section > :first-child {
+    margin-bottom: 8px;
+}
+
+section > :not(:first-child) {
+    margin-left: 16px;
+}
+
+a, a:hover, a:active {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+div.weblink {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 8px;
+}
