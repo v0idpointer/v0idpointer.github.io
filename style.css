@@ -1,19 +1,12 @@
-:root {
-    --background-color: #212121;
-    --foreground-color: #FFFFFF;
-    --accent-color: #FF0080;
-    --description-text-color: #808080;
-}
-
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--background-color);
-    color: var(--foreground-color);
+    background-color: #212121;
+    color: #FFFFFF;
     padding: 16px;
 }
 
 h1 {
-    color: var(--accent-color);
+    color: #FF0080;
     font-size: 2.25em;
 }
 
@@ -24,7 +17,7 @@ p, h1, h2, h3 {
 
 p.description {
     font-size: 0.80em;
-    color: var(--description-text-color);
+    color: #808080;
 }
 
 section {
@@ -40,7 +33,7 @@ section > :not(:first-child) {
 }
 
 a, a:hover, a:active {
-    color: var(--accent-color);
+    color: #FF0080;
     text-decoration: none;
 }
 
@@ -54,4 +47,15 @@ div.weblink {
     flex-wrap: nowrap;
     align-items: center;
     gap: 8px;
+}
+
+div.website-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+img.logo {
+    width: 96px;
+    height: 96px;
 }
